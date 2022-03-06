@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.backgroundImageContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://aquilacommercial.com/wp-content/uploads/2019/02/parking-garage-1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 90vh;
+  width: 900px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1.0);
+  border-radius: 10px;
+  position: relative;
+  padding:25px;
+}
+
+.heading {
+  background-image: url(https://vistapointe.net/images/cool-blue-wallpaper-1.jpg);
+  /* background-color: #F89880; */
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .6);
+  border-radius: 5px;
+}
+h1, h2, #totalCarPrice {
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#carImage {
+  width: 215px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 1em;
+  box-shadow: inset 0 0 0 0 darkgrey;
+  transition: ease-out 0.1s;
+  outline: none;
+}
+
+button:hover {
+box-shadow: inset 100px 0 0 0 darkgrey;
+cursor: pointer;
+}
+
+h3, h4 {
+  padding: 5px;
+  font-size: 20px;
+}
+
+li {
+  padding: 3px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#garageFull {
+  color: red;
+}
+
+img {
+  display: block;
+  position: relative;
+}
+
+
+@keyframes slidein0 {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(3000%);
+  }
+  10.1% {
+    transform: translateX(-1000%);
+  }
+  14% {
+    transform: translateX(3000%);
+  }
+  14.1% {
+    transform: translateX(-1000%);
+  }
+  17% {
+    transform: translateX(3000%);
+  }
+  17.1% {
+    transform: translateX(-1000%);
+  }
+  24% {
+    transform: translateX(3000%);
+  }
+  24.1% {
+    transform: translateX(3000%) translateY(400%);
+  }
+  50% {
+    transform: translateX(1500%) translateY(400%);
+  }
+  65% {
+    transform: translateX(1500%) rotate(-90deg) translateX(-400%);
+  }
+  100% {
+    transform: translateX(1500%) rotate(-90deg) translateX(-870%);
+  }
+}
+#movingCar0 {
+  animation:  7s ease-in-out 1s forwards slidein0;
+}
+@keyframes spot0Slide {
+  0%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(2000%);
+  }
+}
+#spot1 {
+  animation:  4s ease-in-out 0s reverse spot0Slide;
+  float: right;
+  position: relative;
+  right: 8%;
+  top: 415px;
+  height: 100px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+
+@keyframes slidein1 {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(1250%);
+  }
+  30% {
+    transform: translateX(1250%) rotate(90deg);
+  }
+  45% {
+    transform: translateX(1250%) rotate(90deg) translateX(480%);
+  }
+  60% {
+    transform: translateX(1250%) translateY(480%);
+  }
+  75% {
+    transform: translateX(1350%) translateY(480%);
+  }
+  85% {
+    transform: translateX(1250%) translateY(480%);
+  }
+  90% {
+    transform: translateX(1250%) rotate(-90deg) translateX(-480%);
+  }
+  100% {
+    transform: translateX(1250%) rotate(-90deg) translateX(-690%);
+  }
+}
+
+#movingCar1 {
+  animation:  7s ease-in-out 1s forwards slidein1;
+}
+@keyframes spot1Slide {
+  0%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(2500%);
+  }
+}
+#spot2 {
+  animation:  4s ease-in-out 0s reverse spot1Slide;
+  float: right;
+  position: relative;
+  right: 13.5%;
+  top: 415px;
+  height: 100px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}
+
+@keyframes slidein2 {
+  0%{
+    transform: translateX(0%);
+  }
+  25%{
+    transform: translateX(980%);
+  }
+  65%{
+    transform: translateX(980%) rotate(1530deg);
+  }
+  100% {
+    transform: translateX(980%) rotate(1530deg) translateX(510%);
+  }
+}
+#movingCar2 {
+  animation:  6s ease-in-out 1s forwards slidein2;
+}
+@keyframes spot2Slide {
+  0%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(3000%);
+  }
+}
+#spot3 {
+  animation:  4s ease-in-out 0s reverse spot2Slide;
+  float: right;
+  position: relative;
+  right: 19%;
+  top: 415px;
+  height: 100px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+}

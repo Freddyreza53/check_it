@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="scripts/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Week 6 Tier 1 Assignment</title>
+  </head>
+  <body>
+
+    <div class="backgroundImageContainer">
+
+      <div class="container">
+        <div class="heading">
+          <h1>Week 6 Tier 1 Assignment</h1>
+          <h2>Total Price of Cars in Garage: $ <span id="totalCarPrice">0</span></h2>
+        </div>
+
+        <div class="userInputs">
+          <input type="text" placeholder="Year" id="carYear">
+          <input type="text" placeholder="Make" id="carMake">
+          <input type="text" placeholder="Model" id="carModel">
+          <input type="text" placeholder="Price" id="carPrice">
+          <input type="text" placeholder="Image URL" id="carImage">
+          <button id="addCarButton">Add Car</button>
+        </div>
+
+        <h3>My Garage:</h3>
+
+        <div class="parkingSpot1">
+          <h3 id="spot1"></h3>
+        </div>
+        <div class="parkingSpot2">
+          <h3 id="spot2"></h3>
+        </div>
+        <div class="parkingSpot3">
+          <h3 id="spot3"></h3>
+        </div>
+
+        <ul id="displayCars">
+        </ul>
+
+        <h4><span id="availableSpaces">3</span> Spaces Available</h4>
+        <h4 id="garageFull"></h4>
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>
